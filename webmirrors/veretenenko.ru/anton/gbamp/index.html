@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from veretenenko.ru/anton/gbamp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jan 2018 21:20:17 GMT -->
+<head>
+    <title>GBAmp2 also known as Gameboy Color Quality Loud Sound Mod</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      code {
+        font-size: 80%;
+      }
+
+      .warn {
+      	color: rgba(248, 69, 69, 0.86);
+      }
+    </style>
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+  	<div id="wrap">
+
+  		<!-- navbar -->
+  		<div class="navbar navbar-fixed-top">
+  			<div class="navbar-inner">
+  				<div class="container">
+  					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+  					<a class="brand" href="#">GBAmp<sub>2s</sub></a>
+  					<div class="nav-collapse collapse">
+  						<ul class="nav nav-tabs">
+  							<li class="active">
+  								<a href="#about" data-toggle="tab">About</a>
+  							</li>
+  							<li>
+  								<a href="#install" data-toggle="tab">How to Install</a>
+  							</li>
+  							<li>
+  								<a href="#contact" data-toggle="tab">Contact</a>
+  							</li>
+  						</ul>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+  		<!-- content -->
+  		<div class="container">
+  		<div class="tab-content">
+
+  			<div class="tab-pane fade in active" id="about">
+	  			<div class="page-header">
+	  				<h1>GBAmp<sub>2</sub> Project</h1>
+	  			</div>
+	  			<div style="float: left; margin: 20px;">
+	  				<a href="https://www.tindie.com/products/antonveretenenko/gameboy-color-quality-loud-sound-mod-pcb/" target="_blank" title="Order GBAmp2 Now"><img src="banner.png" width="160" height="229" alt="Order Now" /></a>
+	  				<br />also at <a href="http://store.kitsch-bent.com/product/gbamp" target="_blank">kitsch-bent.com</a>
+	  			</div>
+	  			<p class="lead">What is it?</p>
+	  			<p>This is a "Hi-Fi" Class D amplifier for Gameboy Color internal speaker.</p>
+	  			<p class="lead">How it started</p>
+	  			<p>I've got GBC and found rusted speaker with crackling noisy sound and it was barely hearable. Headphones is not the way out.</p>
+	  			<p>So I searched my parts bin for some tiny amp ic and found TI's Class D mono amp. Exactly what I need. I quickly designed and made small pcb to test it out with some random phone loud speaker. Sound was great and loud. You can read the full story at <a href="http://blog.avrnoob.com/2012/10/game-boy-color-loud-sound-mod.html">avrnoob.com</a></p>
+
+	  			<p class="lead">New in version 2</p>
+	  			<p>For the next version I selected other Class D amp from Analog Devices, it's even smaller. I pick smaller one so I can make pcb which fits in the speaker cutout in GBC, just on top of the speaker.</p>
+
+	  			<p class="lead">New in version 2s</p>
+	  			<p>In this one I used TI Class D amplifier ic again. Also mixing stereo signal to the speaker.</p>
+
+	  			<p class="lead">Benefits by using it</p>
+	  			<p>Main benefit is the sound volume, it's much louder than integrated amp, and takes no space inside.</p>
+	  			<p>Class D amp is very power efficient, this means longer battery life, significantly longer.</p>
+	  			<p>If you add additional capacitor on the power line you can get cleaner sound than stock (using line out connection). But with GBAmp 2s version you probably not need for additional capacitor, there are plenty fit on the pcb.</p>
+
+	  			<p class="lead">How to mod your GBC</p>
+	  			<p>You need basic soldering skills to solder 7 wires.</p>
+	  			<p>I will provide detailed step by step tutorial.</p>
+
+	  			<p class="lead">Open Source Hardware</p>
+	  			<p>GBAmp2s pcb is an Open Source Hardware.</p>
+	  			<p>Design available for free at: <a target="_blank" href="https://bitbucket.org/antonveretenenko/gbamp2s">bitbucket.org/antonveretenenko/gbamp2s</a></p>
+
+	  			<p class="lead">Interested?</p>
+	  			<p><a href="https://www.tindie.com/products/antonveretenenko/gameboy-color-quality-loud-sound-mod-pcb/" target="_blank">Order Now</a> at Tindie.com</p>
+	  			<p>Also available at <a href="http://store.kitsch-bent.com/product/gbamp" target="_blank">kitsch-bent.com</a></p>
+  			</div>
+
+  			<div class="tab-pane fade" id="contact">
+	  			<div class="page-header">
+	  				<h1>How to Install</h1>
+	  			</div>
+	  			<p class="lead">Email or Google Hangouts</p>
+	  			<p>
+	  				<img alt="qr code" width="135" height="135" src="../../../vaioubuntu.files.wordpress.com/2009/01/mail.png"><br />
+	  				anton{at}veretenenko.ru
+	  			</p>
+	  			<p class="lead">Twitter</p>
+	  			<p>
+	  				<a href="http://twitter.com/avrnoob" title="avrnoob twitter"><img src="../../../3.bp.blogspot.com/_V_4fg9CRgeY/TSRtQWVjRDI/AAAAAAAAADk/VuncSXzJQIM/S180/TwitterButton.png" width="100" alt="twitter"></a>
+	  			</p>
+  			</div>
+
+  			<div class="tab-pane fade" id="install">
+	  			<div class="page-header">
+	  				<h1>Installation</h1>
+	  			</div>
+	  			<p><span class="warn">WARNING</span> If you connect PCB polarity wrong you will fry the amplifier IC, so be carefull.</p>
+	  			
+	  			<p class="lead">Tools you need</p>
+						<ul>
+							<li>Soldering Iron</li>
+							<li>Some solder, better with flux/resin core</li>
+							<li>Tweezers</li>
+						</ul>
+					
+					<p class="lead">1. First of all verify that you get the full kit. It should iclude:</p>
+						<ul>
+							<li>GBAmp2s PCB</li>
+							<li>5 presoldered wires to the PCB (optional, wires colors does not matter a thing).</li>
+							<li>A new speaker (optional, presoldered to the pcb)</li>
+						</ul>
+					<p class="lead">2. Unscrew and open your Gameboy Color. Do not forget to remove batteries when you open the case.</p>
+					
+					<p class="lead">3. Take out the speaker and desolder wires from the Gameboy PCB pads shown:
+						<p>
+							<a href="img/top-view.jpg" title="Open whole view" target="_blank"><img width="219" height="231" src="img/spk-pads.jpg" alt="speaker pads to desolder" /></a>
+						</p>
+
+					<p class="lead">4. If you leave original speaker then take red wire from the speaker and solder it wire to <b>S+</b> pad on GBAmp2s pcb. Then take black wire and solder it to <b>S-</b> pad. Solder wires from the back of pcb because speaker will go under GBAmp2s pcb.</p>
+					
+					<p class="lead">5. Solder wires as shown on the next picture.</p>
+						<p>
+							<a href="img/gbc-wires.jpg" title="Open whole view" target="_blank"><img src="img/gbc-wires-t.jpg" alt="GBC wires soldering diagram" /></a>
+						</p>
+
+					<p class="lead">6. Put wires around so the case can close freely, take a look at finished unit: </p>
+						<p>
+							<a href="img/gbamp2s-installed.jpg" title="Open whole view" target="_blank"><img src="img/gbamp2s-installed-t.jpg" alt="amp installed" /></a>
+						</p>
+
+					<p class="lead">7. Put speaker in the speaker cutout and push pcb over it.</p>
+
+					<p class="lead">8. Install back cover. Make sure <b>V+</b> and <b>V-</b> connected corrctly before turning it on. Enjoy your new sound.</p>
+
+					<p class="lead">Optional. If you need GBC to switch off speaker when you plug in headphones jack, then you need to connect 3 wires (GND, L, R) to another place. There will be more speaker noise if you use this connection though, due to LCD noise coupling to gameboy amp chip. See next picture for details.
+						<p>
+							<a href="img/con2.jpg" title="Open whole view" target="_blank"><img src="img/con2-t.jpg" alt="amp installed" /></a>
+						</p>
+					</p>
+
+					<h1>DMG Console</h1>
+					<p class="lead">If you want to install GBAmp mod pcb into DMG-001 classic console, then solder wires as shown on the next pictures.</p>
+						<p>Desolder original wires from the speaker and DMG pcb first.</p>
+						<p>I've updated wires diagram and power wire has new connection. It should help if your DMG shutdowns on high volume. I have not updated installed wires picture though.</p>
+						<p>
+							<a href="img/dmg-wires-correct.jpg" title="Open whole view" target="_blank"><img src="img/dmg-wires-t.jpg" alt="DMG wires soldering diagram" /></a>
+						</p>
+						<p>
+							<a href="img/dmg-installed.jpg" title="Open whole view" target="_blank"><img src="img/dmg-installed-t.jpg" alt="DMG GBAmp mod installed" /></a>
+						</p>
+
+					<h1>Troubleshooting</h1>
+					<p>
+						If you have a little distorted but loud sound on not max volume settings then swap speaker wires.<br />
+						If you have the same after swapping, then probably volume control is rusty.<br />
+						If you do not have sound check all connections and wires.<br />
+						If you have very low volume and heavy distorted sound then amp is probably dead. Or speaker is dead, check with another speaker.
+					</p>
+					<p>GBAmp pcb pinout:</p>
+					<p><img src="img/pinout.jpg" alt="pcb pinout" /></p>
+
+  			</div>
+
+  		</div>
+  		</div>
+
+  		<div id="push"></div>
+  	</div>
+
+  	<!-- footer -->
+  	<div id="footer">
+  		<div class="container">
+  			<p class="muted credit">&copy; 2014 Anton Veretenenko. GBAmp<sub>2</sub> is Open Source Hardware, <a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> License.</p>
+  		</div>
+  	</div>
+  </body>
+
+<!-- Mirrored from veretenenko.ru/anton/gbamp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jan 2018 21:21:16 GMT -->
+</html>

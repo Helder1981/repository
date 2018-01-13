@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+	
+<!-- Mirrored from veretenenko.ru/playbook-nes/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jan 2018 21:21:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>NES, Famicom, Famiclones Emulator for BlackBerry Playbook</title>
+		<meta name="description" content="NES, Famicom, Famiclones Emulator for BlackBerry Playbook based on FCEUX">
+		<meta name="keywords" content="nes, famicom, famiclone, famiclones, dendy, emulator, playbook, tablet, blackberry">
+		<meta name="author" content="Anton Veretenenko anton@veretenenko.ru">
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="icon" href="icon.png" type="image/png" sizes="86x86">
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<style type="text/css">
+			#main {
+				font-family: 'PT Sans', sans-serif;
+				min-width: 1280px;
+				width: 1280px;
+				min-height: 685px;
+				margin: auto;
+				background: url("big_screen.png") no-repeat;
+				padding-top: 590px;
+			}
+			#slogan {
+				color: #eee;
+				font-size: 20pt;
+				text-shadow: 1pt 1pt 2pt #222;
+				text-align: center;
+				margin-top: 0;
+			}
+			#title {
+				font-size: 16pt;
+				text-shadow: 1pt 1pt 1pt #ccc;
+				text-align: center;
+			}
+			ul {
+				list-style: none;
+				margin-left: 20pt;
+				padding-left: 0;
+			}
+			.nes {
+				font-family: 'Righteous';
+				font-size: 10pt;
+				color: #D63333;
+			}
+			#screens {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			#screens li {
+				margin: 0;
+				padding: 0;
+				width: 512px;
+				height: 300px;
+				float: left;
+				padding: 5px;
+			}
+			#screens li img {
+				border: 1px solid #dadada;
+				border-radius: 8px;
+			}
+			.step {
+				margin-left: 20pt;
+			}
+			h4 {
+				margin-bottom: 5pt;
+			}
+			p a, p a img {
+				border: 0;
+			}
+		</style>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-10057347-4', 'playbook-nes.com');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	
+	<body>
+	
+		<div id="main">
+			<p id="slogan">
+				Authentic Look & Feel
+			</p>
+			<p id="title">
+				NES Emulator for BlackBerry Playbook<br />
+				<a href="nes_arm-1_1_0_0.bar"><img src="icon.png" width="86" height="86" /></a>
+			</p>
+			<p>
+				<h3>Releases</h3>
+				<ul>
+					<li><b>1.1.0.0 r57</b> - New sound sync and buffers handling code. It may still randomly glitch a bit though.</li>
+					<li><b>1.0.1.0 r56</b> - First release that actually playable, that never gets to AppWorld</li>
+				</ul>
+			</p>
+			<p>
+				<h3>Info</h3>
+				This port is based on <a href="http://www.fceux.com/" target="_blank">FCEUX</a> 2.1.5 emulator. I decided not to use SDL for Playbook because
+				it was software rendered at that time. And made it purely with OpenGL ES and OpenAL for sound. FCEUX is modified to be compiled
+				as library for ease of use. I tried to make look and feel as much authentic to gamepad as possible so you will never see fullscreen
+				feature probably. Anyway it's hard to fit 4:3 aspect ratio into 16:9 of Playbook without distortions or cropping.<br />
+				Part of gamepad design was taken from <a href="https://commons.wikimedia.org/wiki/File:Nes_controller.svg" target="_blank">nes controller svg by Fant0men</a>.<br />
+				Just for the history, first finished game on Playbook was <a href="http://en.wikipedia.org/wiki/Banana_Prince" target="_blank">Banana Prince</a>.
+			</p>
+			<p>
+				<h3>How to install</h3>
+				Download .bar file by clicking on that cute gamepad icon upper.<br />
+				Download <a href="https://developer.blackberry.com/android/tool/" target="_blank">Blackberry Command-line tools for Android Apps</a> and unzip.
+				It's a smallest tools package you can download to install .bar files, otherwise you need to download SDK.<br />
+				Switch your Playbook to <a href="http://developer.blackberry.com/native/documentation/playbook/com.qnx.doc.native_sdk.quickstart/topic/networking.html" target="_blank">Development Mode</a> to upload .bar files to it.<br />
+				<div class="step">
+					<h4>For Linux, Ubuntu, etc:</h4>
+					Open terminal, change current directory to <b>blackberry.tools.SDK/bin</b> then use blackberry-deploy with password
+					(which you set when turn on Development mode) and ip from Playbook and path to downloaded .bar file.<br />
+					For example:
+					<pre>./blackberry-deploy -installApp -launchApp -password 12345 -device 192.168.1.10 -package ~/Desktop/nes_arm-1_1_0_0.bar</pre>
+					Output should look like this:<br />
+					<img src="ubuntu.png" width="886" height="271" />
+					<h4>For Windows:</h4>
+					Unpack tools to Desktop. Put .bar file into <b>CommandLineTools_1.5.2\blackberry.tools.SDK\bin</b>.<br />
+					Open command line by using Win+R combination then type "cmd" without quotes and click OK.<br />
+					In command line type "cd Desktop\CommandLineTools_1.5.2\blackberry.tools.SDK\bin" without quotes and push Enter.<br />
+					Then type "blackberry-deploy.bat -installApp -password 12345 -device 192.168.77.32 -package nes_arm-1_
+					1_0_0.bar" without quotes and substitute your own Playbook password and ip address.<br />
+					Done, result should look like this:<br />
+					<img src="windows.png" width="678" height="331" />
+				</div>
+			</p>
+			<p>
+				<h3>ROMs</h3>
+				FCEUX code base make possible to play almost all games available even awful pirated Chinese ports.<br />
+				Put ROMs into <b>media/misc/NES</b> folder onto your Playbook.<br />
+				Emulator does not sort files for you, so first uploaded roms shown first.
+			</p>
+			<p>
+				<h3>Play</h3>
+				D-Pad up/down is controlling menu cursor. Touch <span class="nes">A</span> to select menu item or rom file.
+				Touch <span class="nes">B</span> to go back. Hold up/down to scroll through menu faster.<br />
+				Swipe from top bezel to screen (Playbook menu gesture) to pause emulator and show menu.
+			</p>
+			<p>
+				<h3>Feature</h3>
+				On top of thing to be done is saves support of course. I was thinking to add a couple of quicksave slots.<br />
+				Multiplayer maybe, not sure how it works yet. More mappers. Cheats, etc.
+			</p>
+			<p>
+				<h3>Developer</h3>
+				<a href="../anton/index.html" target="_blank">Anton Veretenenko</a>
+			</p>
+			<p>
+				<h3>Screenshots</h3>
+				These screenshots are taken by emulator itself, not by that ugly Playbook built-in screenshot maker. That's why they look so good =)
+			</p>
+			<p>
+				<ul id="screens">
+				<li><a href="screens/nes-screen-00002.png" target="_blank"><img src="screens/th/nes-screen-00002_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00003.png" target="_blank"><img src="screens/th/nes-screen-00003_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00004.png" target="_blank"><img src="screens/th/nes-screen-00004_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00005.png" target="_blank"><img src="screens/th/nes-screen-00005_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00006.png" target="_blank"><img src="screens/th/nes-screen-00006_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00007.png" target="_blank"><img src="screens/th/nes-screen-00007_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00008.png" target="_blank"><img src="screens/th/nes-screen-00008_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00009.png" target="_blank"><img src="screens/th/nes-screen-00009_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00010.png" target="_blank"><img src="screens/th/nes-screen-00010_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00011.png" target="_blank"><img src="screens/th/nes-screen-00011_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00012.png" target="_blank"><img src="screens/th/nes-screen-00012_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00013.png" target="_blank"><img src="screens/th/nes-screen-00013_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00014.png" target="_blank"><img src="screens/th/nes-screen-00014_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00015.png" target="_blank"><img src="screens/th/nes-screen-00015_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00016.png" target="_blank"><img src="screens/th/nes-screen-00016_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00017.png" target="_blank"><img src="screens/th/nes-screen-00017_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00018.png" target="_blank"><img src="screens/th/nes-screen-00018_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00019.png" target="_blank"><img src="screens/th/nes-screen-00019_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00020.png" target="_blank"><img src="screens/th/nes-screen-00020_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00021.png" target="_blank"><img src="screens/th/nes-screen-00021_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00022.png" target="_blank"><img src="screens/th/nes-screen-00022_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00023.png" target="_blank"><img src="screens/th/nes-screen-00023_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00024.png" target="_blank"><img src="screens/th/nes-screen-00024_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00025.png" target="_blank"><img src="screens/th/nes-screen-00025_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00026.png" target="_blank"><img src="screens/th/nes-screen-00026_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00027.png" target="_blank"><img src="screens/th/nes-screen-00027_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00028.png" target="_blank"><img src="screens/th/nes-screen-00028_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00029.png" target="_blank"><img src="screens/th/nes-screen-00029_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00030.png" target="_blank"><img src="screens/th/nes-screen-00030_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00031.png" target="_blank"><img src="screens/th/nes-screen-00031_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00032.png" target="_blank"><img src="screens/th/nes-screen-00032_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00033.png" target="_blank"><img src="screens/th/nes-screen-00033_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00034.png" target="_blank"><img src="screens/th/nes-screen-00034_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00035.png" target="_blank"><img src="screens/th/nes-screen-00035_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00036.png" target="_blank"><img src="screens/th/nes-screen-00036_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00037.png" target="_blank"><img src="screens/th/nes-screen-00037_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00038.png" target="_blank"><img src="screens/th/nes-screen-00038_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00039.png" target="_blank"><img src="screens/th/nes-screen-00039_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00040.png" target="_blank"><img src="screens/th/nes-screen-00040_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00041.png" target="_blank"><img src="screens/th/nes-screen-00041_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00042.png" target="_blank"><img src="screens/th/nes-screen-00042_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00043.png" target="_blank"><img src="screens/th/nes-screen-00043_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00044.png" target="_blank"><img src="screens/th/nes-screen-00044_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00045.png" target="_blank"><img src="screens/th/nes-screen-00045_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00046.png" target="_blank"><img src="screens/th/nes-screen-00046_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00047.png" target="_blank"><img src="screens/th/nes-screen-00047_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00048.png" target="_blank"><img src="screens/th/nes-screen-00048_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00049.png" target="_blank"><img src="screens/th/nes-screen-00049_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00050.png" target="_blank"><img src="screens/th/nes-screen-00050_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00051.png" target="_blank"><img src="screens/th/nes-screen-00051_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00052.png" target="_blank"><img src="screens/th/nes-screen-00052_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00053.png" target="_blank"><img src="screens/th/nes-screen-00053_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00054.png" target="_blank"><img src="screens/th/nes-screen-00054_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00055.png" target="_blank"><img src="screens/th/nes-screen-00055_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00056.png" target="_blank"><img src="screens/th/nes-screen-00056_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00057.png" target="_blank"><img src="screens/th/nes-screen-00057_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00058.png" target="_blank"><img src="screens/th/nes-screen-00058_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00059.png" target="_blank"><img src="screens/th/nes-screen-00059_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00060.png" target="_blank"><img src="screens/th/nes-screen-00060_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00061.png" target="_blank"><img src="screens/th/nes-screen-00061_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00062.png" target="_blank"><img src="screens/th/nes-screen-00062_th.png" width="512" height="300" /></a></li><li><a href="screens/nes-screen-00063.png" target="_blank"><img src="screens/th/nes-screen-00063_th.png" width="512" height="300" /></a></li>			</ul>
+			</p>
+		</div>
+	
+	</body>
+
+<!-- Mirrored from veretenenko.ru/playbook-nes/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jan 2018 21:22:02 GMT -->
+</html>
