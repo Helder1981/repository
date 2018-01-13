@@ -1,6 +1,7 @@
 ## Welcome to the Nintendo Tools Repository
-<onebutton>
+<twobutton>
 <ul>
-            <li><a href="https://nintendotools.github.io/Repository/systems">View<strong>Systems</strong></a></li>
+            <li><a href="./systems/">View<strong>Systems</strong></a></li>
+			<li>< href="./webmirrors/">View<strong>WebMirrors</strong></a></li>
           </ul>
-</onebutton>
+</twobutton>
