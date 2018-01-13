@@ -230,7 +230,7 @@ function searchFunction() {
   </tr>
   <tr>
     <td>U4</td>
-	<td>IC</td>
+	<td>Power Controller (Varies)</td>
   </tr>
   <tr>
     <td>C17</td>
