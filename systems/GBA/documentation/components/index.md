@@ -632,6 +632,10 @@ function searchFunction() {
     <td>U6</td>
 	<td>AGB-AMP</td>
   </tr>
+  <tr>
+    <td>T1</td>
+	<td>AGB-Transformer</td>
+  </tr>
  </tbody>
 </table>
 
