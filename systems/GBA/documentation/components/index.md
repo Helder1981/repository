@@ -634,7 +634,7 @@ function searchFunction() {
   </tr>
   <tr>
     <td>T1</td>
-	<td>AGB-Transformer</td>
+	<td>Unknown</td>
   </tr>
  </tbody>
 </table>
