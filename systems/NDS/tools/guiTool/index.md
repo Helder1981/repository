@@ -1,6 +1,6 @@
 ## GuiTool
 
-# To use this place it in your Windows Path, or cd to the file location.
+### To use this place it in your Windows Path, or cd to the file location.
 
 ```
 DS firmware GUI data extractor and injector
