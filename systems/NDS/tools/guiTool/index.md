@@ -5,7 +5,7 @@
 ```
 DS firmware GUI data extractor and injector
 Usage:
-guitool firmware.bin [-e or -i] gui.bin
+guiTool firmware.bin [-e or -i] gui.bin
  firmware.bin: filename of firmware
  -e: extract gui data
  -i: inject gui data
