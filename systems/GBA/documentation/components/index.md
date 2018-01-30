@@ -111,12 +111,12 @@ function searchFunction() {
   <tr>
     <td>DL1</td>
 	<td>SML311UT</td>
-	<td></td>
+	<td>TLMS1000-GS08CT-ND</td>
   </tr>
   <tr>
     <td>DL2</td>
 	<td>SML310MT</td>
-	<td></td>
+	<td>511-1578-2-ND</td>
   </tr>
   <tr>
     <td>D1</td>
