@@ -58,6 +58,7 @@ function searchFunction() {
   <tr><td>Advance Wars(US)</td><td>Nintendo</td><td>AGB-AWRE-USA</td><td>09/09/01</td></tr>
   <tr><td>Advance Wars(AU)</td><td>Nintendo</td><td>AGB-AWRU-AUS</td><td>2001</td></tr>
   <tr><td>Advance Wars(EU)</td><td>Nintendo</td><td>AGB-AWRP-EUR</td><td>11/01/02</td></tr>
+  <tr><td></td><td></td><td></td><td></td></tr>
  </tbody>
 </table>
 
