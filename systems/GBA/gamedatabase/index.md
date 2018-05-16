@@ -88,6 +88,24 @@ function searchFunction() {
 	<td>AGB-AS3P-EUR</td>
 	<td>18/10/02</td>
   </tr>
+  <tr>
+    <td>V-Rally 3(EU)</td>
+    <td>Infogrames</td>
+	<td>AGB-AVRP-EUR</td>
+	<td>21/06/02</td>
+  </tr>
+  <tr>
+    <td>V-Rally 3(JP)</td>
+    <td>Atari SA</td>
+	<td>AGB-AVRJ-JPN</td>
+	<td>27/06/02</td>
+  </tr>
+  <tr>
+    <td>V-Rally 3(US)</td>
+    <td>Atari SA</td>
+	<td>AGB-AVRE-USA</td>
+	<td>30/09/02</td>
+  </tr>
  </tbody>
 </table>
 
