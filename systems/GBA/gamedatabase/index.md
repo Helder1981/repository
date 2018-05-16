@@ -52,6 +52,18 @@ function searchFunction() {
 	<td>AGB-BJBJ-JPN</td>
 	<td>11/02/04</td>
   </tr>
+  <tr>
+    <td>007: NightFire(US)</td>
+    <td>Electronic Arts</td>
+	<td>AGB-A7OE-USA</td>
+	<td>18/03/03</td>
+  </tr>
+  <tr>
+    <td>007: NightFire(EU)</td>
+    <td>Electronic Arts</td>
+	<td>AGB-A7OP-EUR</td>
+	<td>28/03/03</td>
+  </tr>
  </tbody>
 </table>
 
