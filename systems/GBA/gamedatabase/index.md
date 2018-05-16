@@ -64,6 +64,30 @@ function searchFunction() {
 	<td>AGB-A7OP-EUR</td>
 	<td>28/03/03</td>
   </tr>
+  <tr>
+    <td>Tony Hawk's Underground(US)</td>
+    <td>Activision</td>
+	<td>AGB-BTOE-USA</td>
+	<td>27/10/03</td>
+  </tr>
+  <tr>
+    <td>Tony Hawk's Underground(EU)</td>
+    <td>Activision</td>
+	<td>AGB-BTOP-EUR</td>
+	<td>21/11/03</td>
+  </tr>
+  <tr>
+    <td>Kelly Slater's Pro Surfer(US)</td>
+    <td>Activision</td>
+	<td>AGB-AS3E-USA</td>
+	<td>21/08/02</td>
+  </tr>
+  <tr>
+    <td>Kelly Slater's Pro Surfer(EU)</td>
+    <td>Activision</td>
+	<td>AGB-AS3P-EUR</td>
+	<td>18/10/02</td>
+  </tr>
  </tbody>
 </table>
 
