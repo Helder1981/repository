@@ -20,9 +20,9 @@ function searchFunction() {
 };
 </script>
 
-## A full table of every AGB component and their part numbers/specification.
+## A Database of every GBA title Publisher, id and release date
 
-<input type="text" id="AGBInput" onkeyup="searchFunction()" placeholder="Search for Component/Part Number/Specification">
+<input type="text" id="AGBInput" onkeyup="searchFunction()" placeholder="Search for Title/Publisher/ID/Relased">
 
 <table id="AGBTable" class="display">
     <thead>
