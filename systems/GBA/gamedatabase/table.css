@@ -11,7 +11,7 @@
 
 #AGBTable {
     border-collapse: collapse; /* Collapse borders */
-    width: 120%; /* Full-width */
+    width: 150%; /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
     font-size: 18px; /* Increase font-size */
 }
