@@ -29,7 +29,7 @@ function searchFunction() {
         <tr>
             <th>Title</th>
             <th>Publisher</th>
-			<th>Game ID</th>
+			<th>ID</th>
 			<th>Released</th>
         </tr>
     </thead>
