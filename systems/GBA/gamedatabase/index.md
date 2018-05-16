@@ -106,6 +106,18 @@ function searchFunction() {
 	<td>AGB-AVRE-USA</td>
 	<td>30/09/02</td>
   </tr>
+  <tr>
+    <td>Stuntman(US)</td>
+    <td>Infogrames</td>
+	<td>AGB-AUXE-USA</td>
+	<td>24/06/03</td>
+  </tr>
+  <tr>
+    <td>Stuntman(EU)</td>
+    <td>Infogrames</td>
+	<td>AGB-AUXP-EUR</td>
+	<td>04/07/03</td>
+  </tr>
  </tbody>
 </table>
 
