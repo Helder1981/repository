@@ -25,9 +25,7 @@ function searchFunction() {
 <input type="text" id="AGBInput" onkeyup="searchFunction()" placeholder="Search for Title/Publisher/ID/Relased">
 
 <table id="AGBTable" class="display">
-    <thead>
-        <tr><th>Title</th><th>Publisher</th><th>ID</th><th>Released</th></tr>
-    </thead>
+    <thead><tr><th>Title</th><th>Publisher</th><th>ID</th><th>Released</th></tr></thead>
     <tbody>
   <tr><td>007: Everything or Nothing(US)</td><td>EA Games</td><td>AGB-BJBE-USA</td><td>17/11/03</td>
   </tr>
