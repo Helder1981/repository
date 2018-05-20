@@ -21,7 +21,7 @@ Note: Some games may not be able to recieve the distributions
             <li>Usage: <a href="https://web.archive.org/web/https://digiex.net/threads/pokemon-aurora-ticket-distribution-usa-gba-cartridge-rom-download-usa.14901/">digiex.net</a></li>
 </ul>
 <ul>
-            <li><a href="AURAMEW_BUUJ00.gba">AURAMEW_BUUJ00 - US Aurora Ticket</a></li>
+            <li><a href="AURAMEW_BUUJ00.gba">AURAMEW_BUUJ00 - UK/EUR Aura Mew</a></li>
             <li>Games: Ruby, Sapphire, Emerald, LeafGreen & FireRed</li>
             <li>Region: Any as long as game is set to English</li>
             <li>Usage: <a href="https://web.archive.org/web/20180120172010/https://digiex.net/threads/pokemon-aura-mew-distribution-cartridge-gba-rom-download-uk-eur.15296/">digiex.net</a></li>
