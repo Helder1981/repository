@@ -5,3 +5,9 @@
 			<li><a href="./webmirrors/">View<strong>WebMirrors</strong></a></li>
           </ul>
 </twobutton>
+
+<onebutton>
+<ul>
+            <li><a href="../">Go<strong>Back</strong></a></li>
+          </ul>
+</onebutton>
