@@ -1,5 +1,5 @@
 
-## GBA Repository
+## GBC Repository
 <twobutton>
 <ul>
             <li><a href="./components/">View<strong>Components</strong></a></li>
