@@ -1,0 +1,38 @@
+
+<!-- saved from url=(0100)https://web.archive.org/web/20100517135830if_/http://www.postbox.javamaster.co.uk:80/readme-java.txt -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">dsmgba : by Ian Edmundson . Java v1.0-JAVA: October 2002
+Please report any bugs to eddie01100@yahoo.co.uk
+(you are free to use this file as you please)
+
+Compiled for java 1.1 (i.e. -target 1.1)
+
+This executable file was script generated from the GALT specification. Versions of this file can currently be found for the following platforms: 
+
+	Java
+	Linux (i386)
+	Linux(mips r5900)
+	Win32/Dos
+
+See http://www.arcadenation.com for further details
+
+usage: java dsmgba filename output offset
+(Windows alternative: If the JDK is not installed but JVM is, then use Microsofts command line loader for java. i.e. jview dsmgba filename output offset)
+
+	filename is name of gba binary
+	output can be one of either ARM, or THUMB
+	offset is the hex representation of the start address
+
+Use &gt; to redirect console output to a file. 
+e.g. the following saves the output to a file named asmdump:
+
+	java dsmgba test.gba ARM 8000000 &gt; asmdump
+
+To run java code, you must set the classpath environment variable to contain the dsmgba jar file. 
+i.e. Modify the environment variable in the Advanced tab of System Properties (r-click My Computer&gt;Advanced&gt;Environment Variables). You may have to add a new environment variable named classpath if one does not exist. Append the following to the value of classpath:
+	;c:\location_of_jar_on_your_system\dsmgba.jar
+If you do not want to set a permanent variable (i.e you just want to test it out), you can set the classpath in the console under Windows (This is valid until you close that instance of the console):
+	set classpath=%classpath%;c:\location_of_jar_on_your_system\dsmgba.jar
+	java dsmgba
+
+
+(NOTE: dsmgba marks the starting point of code generation for GALT-PS2) </pre></body></html>
