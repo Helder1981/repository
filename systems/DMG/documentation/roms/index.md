@@ -36985,7 +36985,6 @@ function searchFunction() {
 
 			<td>ROM+MBC2+Battery</td>
 			<td>JPN</td>
-			<td align="LEFT" <="" td="">
 		</td></tr>
 		<tr>
 			<td>ONI</td>

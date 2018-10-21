@@ -3,7 +3,7 @@
 <twobutton>
 <ul>
             <li><a href="./components/">View<strong>Components</strong></a></li>
-            <li><a href="./roms/">View<strong>Schematics</strong></a></li>
+            <li><a href="./roms/">View<strong>Roms</strong></a></li>
           </ul>
 </twobutton>
 <onebutton>
