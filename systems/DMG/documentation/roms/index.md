@@ -24,7 +24,7 @@ function searchFunction() {
 
 <input type="text" id="RomInput" onkeyup="searchFunction()" placeholder="Search for Component/Part Number/Specification">
 
-<table id="AGBTable" class="display">
+<table id="RomTable" class="display">
     <thead>
         <tr>
             <th>Rom Name</th>
@@ -35,7 +35,7 @@ function searchFunction() {
 			<th>File name</th>
         </tr>
     </thead>
-<tbody>
+	<tbody>
 		<tr>
 			<td>TWINE CGB</td>
 			<td>2048</td>
@@ -9310,7 +9310,7 @@ function searchFunction() {
 			<td>Collision Detection V1.00</td>
 		</tr>
 		<tr>
-			<td height="21" align="LEFT">2</td>
+			<td height="21" align="LEFT" >2</td>
 			<td>32</td>
 			<td>0</td>
 
@@ -11280,7 +11280,7 @@ function searchFunction() {
 		</tr>
 		<tr>
 			<td>
-			</td><td>256</td>
+			<td>256</td>
 			<td>32</td>
 
 			<td>ROM+MBC1+RAM</td>
@@ -11289,7 +11289,7 @@ function searchFunction() {
 		</tr>
 		<tr>
 			<td>
-			</td><td>512</td>
+			<td>512</td>
 			<td>32</td>
 
 			<td>ROM+MBC1+RAM</td>
@@ -11298,7 +11298,7 @@ function searchFunction() {
 		</tr>
 		<tr>
 			<td>
-			</td><td>256</td>
+			<td>256</td>
 			<td>32</td>
 
 			<td>ROM+MBC1+RAM</td>
@@ -35335,7 +35335,7 @@ function searchFunction() {
 		</tr>
 		<tr>
 			<td>
-			</td><td>32</td>
+			<td>32</td>
 			<td>0</td>
 			<td>ROM ONLY</td>
 			<td>JPN</td>
@@ -36986,7 +36986,8 @@ function searchFunction() {
 
 			<td>ROM+MBC2+Battery</td>
 			<td>JPN</td>
-		</td></tr>
+			<td align="LEFT"</td>
+		</tr>
 		<tr>
 			<td>ONI</td>
 			<td>128</td>
