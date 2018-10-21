@@ -30,6 +30,7 @@ function searchFunction() {
             <th>Rom Name</th>
             <th>Rom(Kbit)</th>
 			<th>RAM(Kbit)</th>
+			<th>Cartridge type</th>
 			<th>Region</th>
 			<th>File name</th>
         </tr>
