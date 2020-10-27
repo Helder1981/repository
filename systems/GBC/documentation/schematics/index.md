@@ -6,7 +6,11 @@
 ## GBC Schematic
 <img src="GBC_Schematic.bmp" data-action="zoom" alt="Main Circuit">
 
+<p> PCB Scans by Krystalize </p>
 
+<img src="gbc_pcb_front.jpg" data-action="zoom" alt="GBC Front">
+
+<img src="gbc_pcb_back.jpg" data-action="zoom" alt="GBC Back">
 
 
 <onebutton>
