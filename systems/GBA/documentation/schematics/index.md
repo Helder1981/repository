@@ -15,7 +15,7 @@
 <img src="connections.jpg" data-action="zoom" alt="Cartridge Pinout">
 
 
-## PCB Front
+## PCB Front [Source](https://circuit-board.de/forum/index.php/Thread/13913-STRIP-CLUB-PCB-Scans/?pageNo=1)
 <img src="AGB_PCB_Components_Front.jpg" data-action="zoom" alt="PCB front with components">
 <img src="AGB_PCB_No_Components_Front.jpg" data-action="zoom" alt="PCB front without components">
 <img src="AGB_PCB_Stripped_Front.jpg" data-action="zoom" alt="PCB front stripped">
